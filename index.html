@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Rucha's Physiotherapy Clinic</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fff;
+            color: #4f51a9;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .clinic-name {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            /* padding: 10px; */
+            font-weight: bold;
+            transition: color 0.3s ease;
+            font-size: 120%;
+        }
+
+        nav a:hover {
+            color: #c8c8c9;
+        }
+
+
+
+        footer {
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+            padding: 10px 0;
+
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-button {
+            background-color: #5282c5;
+            /* Blue background */
+            border: none;
+            /* Remove borders */
+            color: white;
+            /* White text */
+            padding: 10px 20px;
+            /* Some padding */
+            text-align: center;
+            /* Centered text */
+            text-decoration: none;
+            /* Remove underline */
+            display: inline-block;
+            /* Make the button inline */
+            font-size: 16px;
+            /* Increase font size */
+            cursor: pointer;
+            /* Pointer/hand icon */
+            border-radius: 12px;
+            /* Rounded corners */
+            margin: 0 10px;
+        }
+
+        .contact-button:hover {
+            background-color: #5e5ef7;
+            /* Darker blue on hover */
+        }
+
+        .instagram_link img {
+            width: 40px;
+            /* Set a fixed size for Instagram icons */
+            height: 40px;
+            /* Set a fixed size for Instagram icons */
+            /* margin: 0 10px; */
+        }
+
+        .container {
+            text-align: right;
+            padding: 20px;
+            background-color: #f9f9f9;
+            margin: 50px;
+        }
+
+
+
+        .container a {
+            margin-left: 50px;
+            text-align: center;
+            text-decoration: none;
+            color: #00235f;
+            /* White text */
+            padding: 20px 40px;
+            /* Padding inside the button */
+            background-color: #e0f7e9;
+            /* Green background color */
+            border-radius: 15px;
+            /* Rounded corners */
+            display: inline-block;
+            /* Ensures padding and background color work correctly */
+            font-weight: bold;
+            /* Bold text */
+            font-size: 18px;
+            /* Font size */
+            transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+            /* Smooth transition for hover effect */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow */
+        }
+
+        .container a:hover {
+            background-color: #1e7e34;
+            /* Darker green on hover */
+            color: #ffffff;
+            /* White text color on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            /* Slightly deeper shadow on hover */
+        }
+
+
+        .excercise-section img {
+            height: 400px;
+        }
+
+        .textbox_1 {
+            margin-left: 50px;
+            padding: 0 20px;
+            color: #00ffbf;
+            text-align: left;
+            /* display: flex; */
+            /* justify-content: flex-start; */
+        }
+
+        .excercise_section {
+            /* text-align: left; */
+            width: 100%;
+            padding-top: 86px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #f9f9f9;
+        }
+
+        .social_icon {
+            margin-right: 25px;
+        }
+        .services{
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: #497e1e;
+        }
+        .services a{
+            margin: 30px;
+            text-align: center;
+            text-decoration: none;
+            color: #468aff;
+            /* White text */
+            padding: 20px 40px;
+            /* Padding inside the button */
+            background-color: #ffffff;
+            /* Green background color */
+            border-radius: 15px;
+            /* Rounded corners */
+            display: inline-block;
+            /* Ensures padding and background color work correctly */
+            font-weight: bold;
+            /* Bold text */
+            font-size: 18px;
+            /* Font size */
+            transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+            /* Smooth transition for hover effect */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow */
+        }
+        .footer_icons{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="clinic-name"><img src="" alt="logo"></div>
+        <nav>
+            <a href="about.html" class="contact-button">About</a>
+            <a href="mailto:#" class="contact-button">Contact: (+91) 1234567890</a>
+            <div>
+                <a class="instagram_link" href="https://www.instagram.com/rucha">
+                    <img src="images/instagram_logo.png" alt="Instagram">
+                </a>
+            </div>
+            <div class="social_icon">
+                <a class="instagram_link" href="https://www.instagram.com/rucha">
+                    <img src="images/linkedin_logo.png" alt="Instagram">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="excercise_section">
+
+        <div class="textbox_1">
+            <h1> The Better Physiotherapy Option! </h1>
+            <p>dawdaascascsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+        </div>
+        <div>
+
+        </div>
+        <div class="excercise-section">
+            <img src="images/excercise.jpg" alt="Exercise">
+        </div>
+
+    </div>
+    <h1 style="text-align: right;margin-right: 120px;">MIND . BODY . SOUL </h1>
+    <div class="container">
+
+        <a href="#"> <img src="images/location.png" width="40px"><br>In studio <p style="color: black;font-size: small;"> Recieve expert care by <br> proffesionals in the clinic.<br><br> </p></a>
+        <a href="#"> <img src="images/home.png" width="40px"><br>Rehab at home <p style="color: black;font-size: small;"> Recover conviniently from <br> the comfort of your home itself. <br> as a physiotherapist  helps you <br>recover </p></a>
+        <a href="#"> <img src="images/online.png" width="40px"><br>Online rehab <p style="color: black;font-size: small;"> With this, you <br> need not come to a clinic. Online<br> Physiotherapy  is effective<br> convinient and safe </p></a>
+    </div>
+    <div class = "services">
+        <h1>Services we offer:</h1>
+        <a href="#" target = "_blank"> <img src="images/location.png" width="40px"><br>In studio <p style="color: black;font-size: small;"> Recieve expert care by <br> proffesionals in the clinic.<br><br> </p></a>
+        <a href="#"target = "_blank"> <img src="images/location.png" width="40px"><br>In studio <p style="color: black;font-size: small;"> Recieve expert care by <br> proffesionals in the clinic.<br><br> </p></a>
+        <a href="#"target = "_blank"> <img src="images/location.png" width="40px"><br>In studio <p style="color: black;font-size: small;"> Recieve expert care by <br> proffesionals in the clinic.<br><br> </p></a>
+        <a href="#"target = "_blank"> <img src="images/location.png" width="40px"><br>In studio <p style="color: black;font-size: small;"> Recieve expert care by <br> proffesionals in the clinic.<br><br> </p></a>
+        <a href="#"target = "_blank"> <img src="images/location.png" width="40px"><br>In studio <p style="color: black;font-size: small;"> Recieve expert care by <br> proffesionals in the clinic.<br><br> </p></a>
+        
+    </div>
+    <footer>
+        <nav>
+ 
+            <div class = "footer_icons">
+                <a class="instagram_link" href="https://www.instagram.com/rucha">
+                    <img src="images/instagram_logo.png" alt="Instagram">
+                </a>
+            </div>
+            <div class="social_icon">
+                <a class="instagram_link" href="https://www.instagram.com/rucha">
+                    <img src="images/linkedin_logo.png" alt="Instagram">
+                </a>
+            </div>d h   
+        </nav>
+        <p>&copy; 2024 Dr Rucha's Physiotherapy Clinic. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
